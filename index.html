@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2a9ddc762.js" crossorigin="anonymous"></script>
+    <title>Deivid Gonçalves</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h3>Deivid Gonçalves</h3>
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/Deivid126">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:dgoncalves484@gmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me:/81989003753">whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="developer">
+                <h1>Deivid Gonçalves</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+            <div onclick="displayabout()" id="arrow">
+                <i id="animation"class="fa-solid fa-caret-down"></i>
+            </div>
+            <div style= "display: none" id="about">
+                <p>Olá! Sou um developer front-end jr de 23 anos, com conhecimento em HTML, CSS, Javascript e React.</p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor e-mail :)">
+                    <button>enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayabout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
